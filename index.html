@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Clock</title>
+    <link rel="stylesheet" type="text/css" href="styles/mystyles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Clock</title>
-  <link rel="stylesheet" type="text/css" href="styles/mystyles.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-</head>
-
-<body>
-  <figure>
-    <img src="../images/ITSLogo.png" alt="ITSLogo">
-  </figure>
-  <div class="wrapper-timezones">
-    <ul id="ul_bots">
-      <li id="0" class="bot">New York</li>
-      <li id="1" class="bot active">Lisbon</li>
-      <li id="2" class="bot">Amsterdam</li>
-      <li id="3" class="bot">Sydney</li>
-    </ul>
-  </div>
-  <h1>TIMEZONE: GMT</h1>
-
-  <div class="wrapper-center">
-
-    <div class="clock">
-      <div class="hourHand"></div>
-      <div class="minuteHand"></div>
-      <div class="secondHand"></div>
-      <div class="center"></div>
-      <div class="time"></div>
-      <ul>
-        <li><span>1</span></li>
-        <li><span>2</span></li>
-        <li><span>3</span></li>
-        <li><span>4</span></li>
-        <li><span>5</span></li>
-        <li><span>6</span></li>
-        <li><span>7</span></li>
-        <li><span>8</span></li>
-        <li><span>9</span></li>
-        <li><span>10</span></li>
-        <li><span>11</span></li>
-        <li><span>12</span></li>
+  <body>
+    <figure>
+      <img src="../images/ITSLogo.png" alt="ITSLogo" />
+    </figure>
+    <div class="wrapper-timezones">
+      <ul id="ul_bots">
+        <li id="0" class="bot">New York</li>
+        <li id="1" class="bot active">Lisbon</li>
+        <li id="2" class="bot">Amsterdam</li>
+        <li id="3" class="bot">Sydney</li>
       </ul>
     </div>
-  </div>
-  <script src="scripts/main.js"></script>
-</body>
+    <h1>TIMEZONE: GMT</h1>
 
+    <div class="wrapper-center">
+      <div class="clock">
+        <div class="hourHand"></div>
+        <div class="minuteHand"></div>
+        <div class="secondHand"></div>
+        <div class="center"></div>
+        <div class="time"></div>
+        <ul>
+          <li><span>1</span></li>
+          <li><span>2</span></li>
+          <li><span>3</span></li>
+          <li><span>4</span></li>
+          <li><span>5</span></li>
+          <li><span>6</span></li>
+          <li><span>7</span></li>
+          <li><span>8</span></li>
+          <li><span>9</span></li>
+          <li><span>10</span></li>
+          <li><span>11</span></li>
+          <li><span>12</span></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

@@ -13,10 +13,11 @@ img {
     margin-top: 30px;
 }
 
-h1{
-   text-align: center;
+h1 {
+    text-align: center;
     margin-top: 100px;
 }
+
 .wrapper-center {
     position: fixed;
     left: 50%;
@@ -250,10 +251,10 @@ h1{
     border: 0px solid #f70;
     cursor: pointer;
     border-bottom: 3px solid #fff;
-    -webkit-transition: all 800ms ease-in-out;
-    -moz-transition: all 800ms ease-in-out;
-    -o-transition: all 800ms ease-in-out;
-    transition: all 800ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .wrapper-timezones ul li.active {
