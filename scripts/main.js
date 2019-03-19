@@ -8,7 +8,7 @@ window.onload = function() {
   const amPm = document.getElementById("amPm");
 
   var i = 1;
-  var nightMode = false;
+  var nightMode;
   var timer;
 
   // Function to change hour according to timezones
@@ -76,7 +76,7 @@ window.onload = function() {
 
     const hourDeg = (hour / 12) * 360;
     // hourHand.style.transform = "rotate(" + hourDeg + "deg)";
-    TweenLite.to(hourHand, 0.5, { css: { rotation: hourDeg + "_cw" } });
+    TweenLite.to(hourHand, 1, { css: { rotation: hourDeg + "_cw" } });
 
     time.innerHTML =
       "<span>" +
@@ -95,6 +95,7 @@ window.onload = function() {
 
   // Setting Night Mode
   function fn_nightMode() {
+    console.log(nightMode);
     var myBody = document.body;
     if (nightMode) {
       TweenLite.to(myBody, 0.5, { className: "+=bodyNight", delay: 0.8 });
@@ -102,6 +103,9 @@ window.onload = function() {
       TweenLite.to(myBody, 0.5, { className: "-=bodyNight", delay: 0.8 });
     }
   }
+
+  // fn_nightMode();
+  timer = setTimeout(fn_nightMode, 1001);
 
   // remove menu active classes
   function removeCssClass() {
@@ -123,7 +127,7 @@ window.onload = function() {
       removeCssClass();
       addCssClass(e.target.id);
       i = e.target.id;
-      timer = setTimeout(fn_nightMode, 1200);
+      timer = setTimeout(fn_nightMode, 1010);
     }
   });
 };
